@@ -822,9 +822,8 @@ client.channels.get("489944931868082177").send('** :purple_heart: Premium Bot **
 
 client.on("guildDelete", guild => {
   console.log(`  Premium Bot  Leave From Server ${guild.name}, The Server Owner Is ${guild.owner.user.username}`)
-  client.channels.get("489944931868082177").send('** :purple_heart: Premium Bot  **``Kicked``:x:  From Server '+`** [ ${guild.name} ] **`+''+' The Owner Is ' +`**[ ${guild.owner.user.username} ]**` +'')
+  
   });
-
 var prefix = "!";
 
 client.on('message', message => {
