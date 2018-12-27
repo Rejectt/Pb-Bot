@@ -2472,9 +2472,8 @@ client.on('message', function(message) {
 });
 })
 
-
-module.exports.run = async (bot,message,args) => {
-
+client.on('message', message => {
+if (message.content === "!ass") {
   if(!message.channel.nsfw) return message.channel.send("يجب عليك تفعيل خاصية NSFW للقناة ")
 
   let ass = [
